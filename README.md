@@ -1,54 +1,42 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Project Overview
 
-## 🚀 Quick start
+## Project Description
+This project is a personal portfolio that will showcase my skills and recent projects. Project will be using gatsby/react as the main framework.
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Wireframes
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- [Desktop Home](https://imgur.com/JDTcZ8w)
 
-2.  **Start developing.**
+#### MVP
 
-    Navigate into your new site’s directory and start it up.
+- Layout and Structure
+- Menu interaction
+- About me(introduction)
+- Projects and project description
+- Adding ContactForm
+- Aesthetics (home, about, projects, contact)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+## Functional Components
 
-    Your site is now running at http://localhost:8000!
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Layout and Structure | H | 4 |  | tbd|
+| Hamburger Menu | M | 2 |  | 0 |
+| Adding Form | H | 1|  | < 1 |
+| Styling Form | M | 2 |  | tbd |
+| Project Tile Hover | L | 2 |  | tbd|
+| About | M | 3 |  | tbd |
+| Projects | M | 2 |  | tbd |
+| Contact | M | 3 |  | tbd |
+| Interactive Menu buttons | M | 1 | | tbd |
+| Carrousel | L | 5 | | N/A |
+| Total | H | tbd |  | tbd |
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Additional Libraries
 
-4.  **Learn more**
+## Code Snippet
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Issues and Resolutions
