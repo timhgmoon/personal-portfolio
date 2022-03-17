@@ -6,7 +6,6 @@ This project is a personal portfolio that will showcase my skills and recent pro
 
 ## Wireframes
 
-- [Desktop Home](https://imgur.com/JDTcZ8w)
 
 #### MVP
 
@@ -37,6 +36,3 @@ This project is a personal portfolio that will showcase my skills and recent pro
 ## Additional Libraries
 
 ## Code Snippet
-
-
-## Issues and Resolutions
