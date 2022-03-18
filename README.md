@@ -1,11 +1,11 @@
 # Project Overview
 
 ## Project Description
-This project is a personal portfolio that will showcase my skills and recent projects. Project will be using gatsby/react as the main framework.
+This project is a personal portfolio that will showcase my skills and recent projects. Project will be using gatsby/react as the main framework and will use bootstrap to help with layout.
 
 
 ## Wireframes
-
+Desktop version: [Here](https://imgur.com/a/YJKLH33)
 
 #### MVP
 
@@ -16,23 +16,3 @@ This project is a personal portfolio that will showcase my skills and recent pro
 - Adding ContactForm
 - Aesthetics (home, about, projects, contact)
 
-
-## Functional Components
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Layout and Structure | H | 4 |  | tbd|
-| Hamburger Menu | M | 2 |  | 0 |
-| Adding Form | H | 1|  | < 1 |
-| Styling Form | M | 2 |  | tbd |
-| Project Tile Hover | L | 2 |  | tbd|
-| About | M | 3 |  | tbd |
-| Projects | M | 2 |  | tbd |
-| Contact | M | 3 |  | tbd |
-| Interactive Menu buttons | M | 1 | | tbd |
-| Carrousel | L | 5 | | N/A |
-| Total | H | tbd |  | tbd |
-
-## Additional Libraries
-
-## Code Snippet

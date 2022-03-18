@@ -7,11 +7,12 @@ const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand href="#home">Tmoon</Navbar.Brand>
-    <Nav className="me-right">
+    <Navbar.Brand href="#home">TM</Navbar.Brand>
+    <Nav>
       <Nav.Link href="#home">About</Nav.Link>
-      <Nav.Link href="#features">Projects</Nav.Link>
-      <Nav.Link href="#pricing">Contact</Nav.Link>
+      <Nav.Link href="/">Projects</Nav.Link>
+      <Nav.Link href="/">Contact</Nav.Link>
+      <Nav.Link href="/">Contact</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

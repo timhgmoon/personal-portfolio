@@ -2,6 +2,7 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './navigation';
+import About from './about';
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -9,6 +10,7 @@ const IndexPage = () => {
     <main className="bg-dark">
       <Navigation/>
       <title>Home Page</title>
+      <About/>
     </main>
   )
 }
