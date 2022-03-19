@@ -3,8 +3,9 @@ import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.module.css'
 import Container from 'react-bootstrap/Container';
-import Navigation from './navigation';
 import About from './about';
+import Navigation from './navigation';
+import Projects from './projects';
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Container fluid="md">
         <Navigation/>
         <About/>
+        <Projects/>
       </Container>
     </main>
   )

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Name, JobTitle} from './about.module.css';
+import * as aboutStyles from './about.module.css';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -13,10 +13,10 @@ const About = () => {
           <p>
           HI THERE, I'M
           </p>
-          <p className={Name}>
+          <p className={aboutStyles.name}>
             Tim Moon
           </p>
-          <p className={JobTitle}>
+          <p className={aboutStyles.jobTitle}>
             Software Developer
           </p>
           <p>
