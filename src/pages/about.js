@@ -6,8 +6,9 @@ import Row from 'react-bootstrap/Row';
 import ProfileImage from '../images/profile-image.png';
 
 const About = () => {
+  const containerClass = `px-5 ${aboutStyles.background}`
   return(
-    <Container className="bg-light px-5">
+    <Container className={containerClass} fluid>
       <Row className="d-flex align-items-center">
         <Col>
           <p>
