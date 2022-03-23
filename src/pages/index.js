@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './about';
 import Navigation from './navigation';
 import Projects from './projects';
+import Contact from './contact';
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -13,6 +14,7 @@ const IndexPage = () => {
         <Navigation/>
         <About/>
         <Projects/>
+        <Contact/>
       </>
   )
 }
