@@ -16,7 +16,7 @@ const Projects = () => {
           <img src={DailyDriverImage} alt="project 1" width="100%" height="250px"></img>
         </Col>
         <Col xs={6}>
-          <h2>Daily Driver</h2>
+          <h2 className={projectStyles.projectTitle}>Daily Driver</h2>
           <p>Daily Driver's main goal was to allow developers like us to have one space where we can collaborate and create project tasks for team members. In this project we decided to use the MERN stack and my main role was creating the backend.</p>
         </Col>
         <Col xs={6}>

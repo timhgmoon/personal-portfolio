@@ -1,5 +1,5 @@
 .name {
-  font-size: 30px;
+  font-size: 80px;
 }
 
 .jobTitle {
@@ -8,4 +8,21 @@
 
 .background {
   background-color: #E2E2E2;
+  background-image: url("../images/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.description {
+  text-align: left;
+}
+
+@media only screen and (min-width: 1200px) {
+  .description {
+    padding: 0 15% 0 15%;
+  }
 }
