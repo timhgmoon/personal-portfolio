@@ -1,10 +1,13 @@
+@media only screen and (min-height: 889px) {
+  .background {
+    height: 100vh;
+  }
+}
+
 .background {
   background-color: #DBDBDB;
 }
 
-.projectImg {
-  margin-left: -20px;
-}
 
 .projectTitle {
   text-align: center;

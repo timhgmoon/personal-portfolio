@@ -12,10 +12,10 @@ const IndexPage = () => {
   return (
     <>
       <title>Tim's Portfolio</title>
-        <Navigation/>
-        <About/>
-        <Projects/>
-        <Contact/>
+      <Navigation/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </>
   )
 }

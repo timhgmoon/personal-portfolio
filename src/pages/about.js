@@ -1,9 +1,6 @@
 import * as React from 'react';
 import * as aboutStyles from './about.module.css';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import ProfileImage from '../images/profile-image.png';
 
 const About = () => {
   const containerClass = `d-flex flex-column justify-content-center px-5 ${aboutStyles.background}`
