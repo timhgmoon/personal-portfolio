@@ -1,6 +1,15 @@
 .background {
   background-color: #E2E2E2;
-  height: 100vh;
+}
+
+.contactHeader {
+  border-bottom: 1px solid darkgray; 
+  line-height: 0.1em;
+}
+
+.contactHeader span {
+  background: #E2E2E2;
+  padding: 0 10px;
 }
 
 .secondary {

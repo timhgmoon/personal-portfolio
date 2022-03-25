@@ -13,7 +13,7 @@ const About = () => {
             Tim Moon
           </p>
           <p className={aboutStyles.jobTitle}>
-            Software Developer
+            Software Engineer
           </p>
           <p className={aboutStyles.description}>
             Recent graduate at General Assembly (SEI program) specializing in Python and Django. Professional skills include coaching, adaptability, and problem solving. I am looking for an opportunity that will allow me to express my ideas and make my code come to life!

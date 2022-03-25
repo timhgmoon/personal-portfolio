@@ -7,23 +7,20 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 const Contact = () => {
-  const containerClass = `px-5 ${contactStyles.background}`
-  const formContainer = `${contactStyles.secondary}`
+  const containerClass = `px-5 py-4 ${contactStyles.background}`
+  const formContainer = ` my-4 ${contactStyles.secondary}`
   return(
     <Container className={containerClass} fluid>
-      {/* <h2>Contact</h2>
+      <h2 className={contactStyles.contactHeader}><span>Contact</span></h2>
       <Row className={formContainer}>
         <Col sm={8}>
           <Form>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
+              <Form.Label>Email address:</Form.Label>
+              <Form.Control type="email" placeholder="example@domain.com" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Message:</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
             <Button className="btn-secondary" type="submit">
@@ -41,7 +38,7 @@ const Contact = () => {
           </ul>
         </Col>
       </Row>
-       */}
+      
     </Container>
   )
 }

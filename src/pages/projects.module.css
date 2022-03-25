@@ -5,10 +5,21 @@
 }
 
 @media only screen and (max-width: 769px) {
-  h2 {
+  h3 {
     display: none;
   }
 }
+
+.projectHeader {
+  border-bottom: 1px solid darkgray; 
+  line-height: 0.1em;
+}
+
+.projectHeader span {
+  background: #DBDBDB;
+  padding: 0 10px;
+}
+
 .background {
   background-color: #DBDBDB;
 }
