@@ -28,7 +28,7 @@ const Contact = () => {
             </Button>
           </Form>
         </Col>
-        <Col sm={4}>
+        <Col sm={4} className="d-flex flex-column justify-content-center">
           <p>Tim Moon</p>
           <p>timhgmoon@gmail.com</p>
           <p>Social Media</p>

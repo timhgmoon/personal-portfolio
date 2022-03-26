@@ -16,7 +16,7 @@ const About = () => {
             Software Engineer
           </p>
           <p className={aboutStyles.description}>
-            Recent graduate at General Assembly (SEI program) specializing in Python and Django. Professional skills include coaching, adaptability, and problem solving. I am looking for an opportunity that will allow me to express my ideas and make my code come to life!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mi risus, viverra sed tellus a, scelerisque pulvinar justo. Aliquam vel mauris non sapien pretium consectetur. Ut pulvinar, nisi et placerat vestibulum, purus eros elementum eros, sit amet varius eros dui ut elit. Curabitur fringilla dui non nunc ullamcorper ultrices sit amet ac purus. Sed malesuada pulvinar urna eget iaculis. Nullam hendrerit ex suscipit semper maximus. Suspendisse venenatis sem non scelerisque convallis. Mauris ut aliquam enim. Donec aliquam elit sapien, quis rutrum felis sagittis non.
           </p>
     </Container>
   )
