@@ -2,7 +2,7 @@
 import * as React from 'react';
 import '@fontsource/roboto-serif';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import indexStyle from './index.module.css';
+import './index.module.css';
 import About from './about';
 import Navigation from './navigation';
 import Projects from './projects';

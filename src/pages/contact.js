@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as contactStyles from './contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquarePen } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -36,19 +37,29 @@ const Contact = () => {
         <Col sm={4} className={formContent}>
           <p>Tim Moon</p>
           <p>timhgmoon@gmail.com</p>
-          <p>Social Media:</p>
-          <ul>
-            <li>
-              <a href="https://github.com/timhgmoon" target="_blank">
-                <FontAwesomeIcon icon={faGithub} size="xl"/>
+          <Row>
+            <Col xs={6}><p className={contactStyles.iconHeader}>Social Media</p></Col>
+            <Col xs={6}><p className={contactStyles.iconHeader}>Resume</p></Col>
+            <Col xs={6}>
+              <ul>
+                <li>
+                  <a href="https://github.com/timhgmoon" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} size="xl"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/timhgmoon/" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} size="xl" color="#2867B2"/>
+                  </a>
+                </li>
+              </ul>
+            </Col>
+            <Col xs={6}>
+              <a href="https://drive.google.com/file/d/1bXxRFz1PO2wATwAXNYOqc8JeNDL0Mqz8/view?usp=sharing" target="_blank" rel="noreferrer" id={contactStyles.resumeIcon}>
+                <FontAwesomeIcon icon={faSquarePen} size="xl"/>
               </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/timhgmoon/" target="_blank">
-                <FontAwesomeIcon icon={faLinkedin} size="xl" color="#2867B2"/>
-              </a>
-            </li>
-          </ul>
+            </Col>
+          </Row>
         </Col>
       </Row>
       
