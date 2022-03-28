@@ -3,6 +3,7 @@ import * as projectStyles from '../pages/projects.module.css';
 import Col from 'react-bootstrap/Col';
 
 const Project = ({title, description, img, alt}) => {
+  const descriptionClass = `pt-2 ${projectStyles.projectDescription}`
   return (
     <>
       <Col xs={{order: 1}} md={{order: 2}}>
@@ -10,7 +11,7 @@ const Project = ({title, description, img, alt}) => {
       </Col>
       <Col xs={{order: 2}} md={{order: 1}}>
         <h3 className={projectStyles.projectTitle}>{title}</h3>
-        <p>{description}</p>
+        <p className={descriptionClass}>{description}</p>
       </Col>
       <Col xs={{order: 3}} md={{order: 3}}><hr/></Col>
     </>
