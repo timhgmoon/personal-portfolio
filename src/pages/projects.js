@@ -16,7 +16,7 @@ const Projects = () => {
   const project2Description = "Backend application that imitates most social media platform.  I used this project to get a better understanding on Django. The project allowed me to dive deeper into Django's REST framework documentation and learned more about CORS during the process."
   return(
     <Container className={containerClass} fluid>
-      <h2 className={projectStyles.projectHeader}><span>Projects</span></h2>
+      <h2 className={projectStyles.projectHeader}><span id="project">Projects</span></h2>
       <Row xs={1} md={2} className="pt-3">
         <Project 
           title={project1Title} 

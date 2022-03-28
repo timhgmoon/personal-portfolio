@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 const About = () => {
   const containerClass = `d-flex flex-column justify-content-center px-5 ${aboutStyles.background}`
   return(
-    <Container className={containerClass} fluid>
+    <Container className={containerClass} id="about-me" fluid>
           <p>
           HI THERE, I'M
           </p>

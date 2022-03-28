@@ -14,7 +14,7 @@ const Contact = () => {
   const formContent = `d-flex flex-column justify-content-center ${contactStyles.contactInfo}`
   return(
     <Container className={containerClass} fluid>
-      <h2 className={contactStyles.contactHeader}><span>Contact</span></h2>
+      <h2 className={contactStyles.contactHeader}><span id="contact">Contact</span></h2>
       <Row className={formContainer}>
         <Col sm={8}>
           <Form>

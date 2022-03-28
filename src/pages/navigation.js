@@ -5,13 +5,13 @@ import Container from 'react-bootstrap/Container';
 
 const Navigation = () => {
   return (
-    <Navbar bg="light">
+    <Navbar bg="light" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">TM</Navbar.Brand>
+        <Navbar.Brand href="/">TM</Navbar.Brand>
         <Nav>
-          <Nav.Link href="#home">About</Nav.Link>
-          <Nav.Link href="/">Projects</Nav.Link>
-          <Nav.Link href="/">Contact</Nav.Link>
+          <Nav.Link href="#about-me">About</Nav.Link>
+          <Nav.Link href="#project">Projects</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Container>
   </Navbar>
