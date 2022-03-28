@@ -15,11 +15,11 @@ const IndexPage = () => {
   return (
     <>
       <title>Tim's Portfolio</title>
-      <Container fluid className="p-0">
-      <Navigation/>
-      <About/>
-      <Projects/>
-      <Contact/>
+        <Container fluid className="p-0">
+        <Navigation/>
+        <About/>
+        <Projects/>
+        <Contact/>
       </Container>
     </>
   )
