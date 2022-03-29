@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { navigate } from 'gatsby';
 import axios from 'axios';
 import * as contactStyles from './contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,6 +18,15 @@ const Contact = () => {
   const formContent = `d-flex flex-column justify-content-center ${contactStyles.contactInfo}`
   const headerClass = `pt-3 ${contactStyles.contactHeader}`
 
+  //Hooks
+  const [toSuccess, setToSuccess] = React.useState(false)
+
+  useEffect (() => {
+    if(toSuccess === true) {
+      navigate('/form-submitted/');
+    }
+  }, [toSuccess])
+
   const [emailInfo, setEmailInfo] = useState({
     email: '',
     message: ''
@@ -31,12 +41,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(emailInfo)
-
     axios.post('https://sheet.best/api/sheets/18e74236-45e6-436d-bdd3-d2f0bd45cda8', emailInfo)
       .then(response => {
         console.log(response)
       })
+    setToSuccess(true)
   }
 
   return(
@@ -44,7 +53,7 @@ const Contact = () => {
       <h2 className={headerClass}><span id="contact">Contact</span></h2>
       <Row className={formContainer}>
         <Col sm={8}>
-          <Form>
+          <Form  onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address:</Form.Label>
               <Form.Control type="email" placeholder="example@domain.com" name="email" value={emailInfo.email} onChange={handleChange}/>
@@ -53,7 +62,7 @@ const Contact = () => {
               <Form.Label>Message:</Form.Label>
               <Form.Control as="textarea" rows={3} name="message" value={emailInfo.message} onChange={handleChange}/>
             </Form.Group>
-            <Button className="btn-secondary" type="submit" onClick={handleSubmit}>
+            <Button className="btn-secondary" type="submit">
               Submit
             </Button>
           </Form>
