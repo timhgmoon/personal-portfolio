@@ -2,6 +2,7 @@ import * as React from 'react';
 import DailyDriverImage from '../images/daily-drive.png';
 import DjangoImage from '../images/django-backend.png';
 import * as projectStyles from './projects.module.css';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -19,6 +20,8 @@ const Projects = () => {
   const containerClass = `px-5 py-4 ${projectStyles.background}`
   const descriptionClass = `pt-2 ${projectStyles.projectDescription}`
   const headerClass = `pt-4 ${projectStyles.projectHeader}`
+  const buttonClass = `btn-secondary ${projectStyles.button}`
+
   return(
     <Container className={containerClass} fluid>
       <h2 className={headerClass}><span id="project">Projects</span></h2>
@@ -34,9 +37,14 @@ const Projects = () => {
         <Col xs={{order: 1}} md={{order: 2}}>
           <img src={DjangoImage} alt="django project" width="100%" height="100%"></img>
         </Col>
-        <Col xs={{order: 2}} md={{order: 1}}>
+        <Col className={projectStyles.col} xs={{order: 2}} md={{order: 1}}>
           <h3 className={projectStyles.projectTitle}>{project2Title}</h3>
           <p className={descriptionClass}>{project2Description}</p>
+          <Button 
+            className={buttonClass} href="https://github.com/timhgmoon/django-social-media" target="_blank"
+            rel="noreferrer">
+            See on Github
+          </Button>
         </Col>
       </Row>
     </Container>

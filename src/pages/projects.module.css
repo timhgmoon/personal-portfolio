@@ -24,6 +24,9 @@
   background-color: #DBDBDB;
 }
 
+.col {
+  position: relative;
+}
 
 .projectTitle {
   text-align: center;
@@ -32,4 +35,10 @@
 
 .projectDescription {
   line-height: 1.8;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
