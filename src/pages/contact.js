@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import * as contactStyles from './contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePen } from '@fortawesome/free-solid-svg-icons';
@@ -22,13 +23,20 @@ const Contact = () => {
   })
 
   const handleChange = (e) => {
-    setEmailInfo({[e.target.name]: e.target.value})
+    setEmailInfo({
+      ...emailInfo,
+      [e.target.name]: e.target.value
+    })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(emailInfo.message)
-    console.log(emailInfo.email)
+    console.log(emailInfo)
+
+    axios.post('https://sheet.best/api/sheets/18e74236-45e6-436d-bdd3-d2f0bd45cda8', emailInfo)
+      .then(response => {
+        console.log(response)
+      })
   }
 
   return(
@@ -39,13 +47,13 @@ const Contact = () => {
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address:</Form.Label>
-              <Form.Control type="email" placeholder="example@domain.com" name='email' onChange={handleChange}/>
+              <Form.Control type="email" placeholder="example@domain.com" name="email" value={emailInfo.email} onChange={handleChange}/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Message:</Form.Label>
-              <Form.Control as="textarea" rows={3} name='message' onChange={handleChange}/>
+              <Form.Control as="textarea" rows={3} name="message" value={emailInfo.message} onChange={handleChange}/>
             </Form.Group>
-            <Button className="btn-secondary" type="submit" onSubmit={handleSubmit}>
+            <Button className="btn-secondary" type="submit" onClick={handleSubmit}>
               Submit
             </Button>
           </Form>
