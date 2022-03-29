@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import * as contactStyles from './contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePen } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +10,26 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 const Contact = () => {
+  // css
   const containerClass = `px-5 py-4 ${contactStyles.background}`
   const formContainer = `p-2 my-4 ${contactStyles.secondary}`
   const formContent = `d-flex flex-column justify-content-center ${contactStyles.contactInfo}`
   const headerClass = `pt-3 ${contactStyles.contactHeader}`
+
+  const [emailInfo, setEmailInfo] = useState({
+    email: '',
+    message: ''
+  })
+
+  const handleChange = (e) => {
+    setEmailInfo({[e.target.name]: e.target.value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(emailInfo.message)
+    console.log(emailInfo.email)
+  }
 
   return(
     <Container className={containerClass} fluid>
@@ -23,13 +39,13 @@ const Contact = () => {
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address:</Form.Label>
-              <Form.Control type="email" placeholder="example@domain.com" />
+              <Form.Control type="email" placeholder="example@domain.com" name='email' onChange={handleChange}/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Message:</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control as="textarea" rows={3} name='message' onChange={handleChange}/>
             </Form.Group>
-            <Button className="btn-secondary" type="submit">
+            <Button className="btn-secondary" type="submit" onSubmit={handleSubmit}>
               Submit
             </Button>
           </Form>
