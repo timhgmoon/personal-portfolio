@@ -1,29 +1,33 @@
 import * as React from 'react';
 import * as projectStyles from '../pages/projects.module.css';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
-const Project = ({title, description, img, alt}) => {
-  const descriptionClass = `pt-2 ${projectStyles.projectDescription}`
-  const buttonClass = `btn-secondary ${projectStyles.button}`
+const Project = ({title, description, img, alt, skills, link}) => {
+  const cardTitleClass = `pl-2 pt-2 ${projectStyles.background}`
+
   return (
-    <>
-      <Col xs={{order: 1}} md={{order: 2}}>
-        <img src={img} alt={alt} width="100%" height="100%"></img>
-      </Col>
-      <Col className={projectStyles.col} xs={{order: 2}} md={{order: 1}}>
-        <h3 className={projectStyles.projectTitle}>{title}</h3>
-        <p className={descriptionClass}>{description}</p>
-        <Button 
-          className={buttonClass}
-          href="https://github.com/timhgmoon/Daily-Driver-Backend"
-          target="_blank"
-          rel="noreferrer">
-            See on Github
-        </Button>
-      </Col>
-      <Col xs={{order: 3}} md={{order: 3}}><hr/></Col>
-    </>
+    <Col className="pb-2">
+      <Card className={cardTitleClass}>
+        <Card.Title className={projectStyles.projectTitle}>{title}</Card.Title>
+        <Card.Img variant="top" src={img} alt={alt}/>
+        <Card.Body>
+          <Card.Text>
+            {description}
+          </Card.Text>
+          <Button className="btn-secondary"
+            href={link}
+            target="_blank"
+            rel="noreferrer">
+            Link to Github
+          </Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">{skills}</small>
+        </Card.Footer>
+      </Card>
+    </Col>
   )
 }
 

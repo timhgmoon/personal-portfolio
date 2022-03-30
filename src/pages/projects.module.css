@@ -10,6 +10,17 @@
   }
 }
 
+@media only screen and (min-width: 960px) {
+  .projectTitle {
+    font-size: 25px;
+  }
+  
+}
+
+.background {
+  background-color: #DBDBDB;
+}
+
 .projectHeader {
   border-bottom: 1px solid darkgray; 
   line-height: 0.1em;
@@ -20,25 +31,6 @@
   padding: 0 10px;
 }
 
-.background {
-  background-color: #DBDBDB;
-}
-
-.col {
-  position: relative;
-}
-
 .projectTitle {
-  text-align: center;
-  padding: 20px 20px 0 0;
-}
-
-.projectDescription {
-  line-height: 1.8;
-}
-
-.button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  text-align: center !important;
 }
