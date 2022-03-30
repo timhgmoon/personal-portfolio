@@ -60,7 +60,7 @@ const Contact = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Message:</Form.Label>
-              <Form.Control as="textarea" rows={3} name="message" value={emailInfo.message} onChange={handleChange}/>
+              <Form.Control as="textarea" rows={6} name="message" value={emailInfo.message} onChange={handleChange}/>
             </Form.Group>
             <Button className="btn-secondary" type="submit">
               Submit
