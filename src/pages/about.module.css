@@ -3,19 +3,17 @@
 }
 
 .jobTitle {
-  color: #e6b22e;
+  color: #FFFDD0;
 }
 
 .background {
-  background-color: #E2E2E2;
-  background-image: url("../images/background.jpeg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.85;
   height: 100vh;
   text-align: center;
-  color: white;
+  color: #FAFDF3;
 }
 
 .description {

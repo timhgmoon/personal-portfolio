@@ -2,18 +2,25 @@ import * as React from 'react';
 import DailyDriverImage from '../images/daily-drive.png';
 import DjangoImage from '../images/django-backend.png';
 import * as projectStyles from './projects.module.css';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Project from '../components/project';
 const Projects = () => {
-  //content variables
+  //projects
   const project1 = {
     title: "Daily Driver",
     description: "Daily Driver's main goal was to allow developers like us to have one space where we can collaborate and create project tasks for team members. In this project we decided to use the MERN stack and my main role was creating the backend.",
     img: DailyDriverImage,
     alt: "daily driver",
     skills: "Html | Css | React | mongoDB",
-    link: "https://github.com/timhgmoon/Daily-Driver-Backend"
+    link: "https://github.com/timhgmoon/Daily-Driver-Backend",
+    button: <Button className="btn btn-secondary btn-sm mx-2"
+              href="https://pages.git.generalassemb.ly/Undefined/Daily-Driver-Client/"
+              target="_blank"
+              rel="noreferrer">
+              Link to Webpage
+            </Button>
   }
   const project2 = {
     title: "Social Media Backend",
@@ -38,7 +45,8 @@ const Projects = () => {
           img={project1.img}
           alt={project1.alt}
           skills={project1.skills}
-          link={project1.link}/>
+          link={project1.link}
+          button={project1.button}/>
         <Project
           title={project2.title}
           description={project2.description}

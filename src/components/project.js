@@ -4,24 +4,24 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
-const Project = ({title, description, img, alt, skills, link}) => {
-  const cardTitleClass = `pl-2 pt-2 ${projectStyles.background}`
+const Project = ({title, description, img, alt, skills, link, button}) => {
 
   return (
     <Col className="pb-2">
-      <Card className={cardTitleClass}>
-        <Card.Title className={projectStyles.projectTitle}>{title}</Card.Title>
+      <Card className={projectStyles.background}>
+        <Card.Header className={projectStyles.projectTitle}>{title}</Card.Header>
         <Card.Img variant="top" src={img} alt={alt}/>
         <Card.Body>
           <Card.Text>
             {description}
           </Card.Text>
-          <Button className="btn-secondary"
+          <Button className="btn btn-secondary btn-sm"
             href={link}
             target="_blank"
             rel="noreferrer">
             Link to Github
           </Button>
+          {button}
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">{skills}</small>
