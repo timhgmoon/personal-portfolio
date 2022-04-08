@@ -24,12 +24,22 @@ const Projects = () => {
   }
   const project2 = {
     title: "Social Media Backend",
-    description: "Backend application that imitates most social media platform.  I used this project to get a better understanding on Django. The project allowed me to dive deeper into Django's REST framework documentation and learned more about CORS during the process.",
+    description: "Backend application that imitates most social media platform.  I used this project to get a better understanding of Django. The project allowed me to dive deeper into Django's REST framework documentation and learned more about CORS during the process.",
     img: DjangoImage,
     alt: "social media back end",
     skills: "Html | Css | React | Python | Django",
     link: "https://github.com/timhgmoon/django-social-media"
   }
+  const project3 = {
+    title: "Top 100 KR",
+    description: "Project utilizes both Spotify and Melon Chart API(Korea's music billboard). The app grabs the current top 100 songs in Korea and allows users to listen on Spotify as well as showing the chosen song's lyrics. *Melon API discontinued*",
+    img: "",
+    alt: "top 100 kr",
+    skills: "Html | Css | React | Bootstrap",
+    link: "https://github.com/timhgmoon/top-100"
+  }
+  
+  
 
   //css mods
   const containerClass = `px-5 py-4 ${projectStyles.background}`
@@ -54,6 +64,13 @@ const Projects = () => {
           alt={project2.alt}
           skills={project2.skills}
           link={project2.link}/>
+        <Project
+          title={project3.title}
+          description={project3.description}
+          img={project3.img}
+          alt={project3.alt}
+          skills={project3.skills}
+          link={project3.link}/>
       </Row>
       
     </Container>
