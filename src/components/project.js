@@ -5,10 +5,11 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
 const Project = ({title, description, img, alt, skills, link, button}) => {
+  const cardClass = `h-100 ${projectStyles.background}`
 
   return (
     <Col className="pb-2">
-      <Card className={projectStyles.background}>
+      <Card className={cardClass}>
         <Card.Header className={projectStyles.projectTitle}>{title}</Card.Header>
         <Card.Img variant="top" src={img} alt={alt}/>
         <Card.Body>
