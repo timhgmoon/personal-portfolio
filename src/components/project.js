@@ -8,10 +8,10 @@ const Project = ({title, description, img, alt, skills, link, button}) => {
   const cardClass = `h-100 ${projectStyles.background}`
 
   return (
-    <Col className="pb-2">
+    <Col className="pb-2 mb-3">
       <Card className={cardClass}>
         <Card.Header className={projectStyles.projectTitle}>{title}</Card.Header>
-        <Card.Img variant="top" src={img} alt={alt}/>
+        <Card.Img variant="top" src={img} alt={alt} width="100%" height="100%"/>
         <Card.Body>
           <Card.Text>
             {description}
@@ -20,7 +20,7 @@ const Project = ({title, description, img, alt, skills, link, button}) => {
             href={link}
             target="_blank"
             rel="noreferrer">
-            Link to Github
+            Github Link
           </Button>
           {button}
         </Card.Body>

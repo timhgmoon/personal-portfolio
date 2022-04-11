@@ -1,6 +1,7 @@
 import * as React from 'react';
 import DailyDriverImage from '../images/daily-drive.png';
 import DjangoImage from '../images/django-backend.png';
+import SpotifyProjImage from '../images/spotify-project.png'
 import * as projectStyles from './projects.module.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -19,7 +20,7 @@ const Projects = () => {
               href="https://pages.git.generalassemb.ly/Undefined/Daily-Driver-Client/"
               target="_blank"
               rel="noreferrer">
-              Link to Webpage
+              Live Link
             </Button>
   }
   const project2 = {
@@ -32,8 +33,8 @@ const Projects = () => {
   }
   const project3 = {
     title: "Top 100 KR",
-    description: "Project utilizes both Spotify and Melon Chart API(Korea's music billboard). The app grabs the current top 100 songs in Korea and allows users to listen on Spotify as well as showing the chosen song's lyrics. *Melon API discontinued*",
-    img: "",
+    description: "Project utilizes both Spotify and Melon Chart API(Korea's music billboard). The app grabs the current top 100 songs in Korea and displays on home screen while allowing users to listen on Spotify. *Melon API discontinued*",
+    img: SpotifyProjImage,
     alt: "top 100 kr",
     skills: "Html | Css | React | Bootstrap",
     link: "https://github.com/timhgmoon/top-100"
