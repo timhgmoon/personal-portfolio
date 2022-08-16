@@ -88,7 +88,7 @@ const Contact = () => {
               </ul>
             </Col>
             <Col xs={6}>
-              <a href="https://drive.google.com/file/d/1bXxRFz1PO2wATwAXNYOqc8JeNDL0Mqz8/view?usp=sharing" target="_blank" rel="noreferrer" id={contactStyles.resumeIcon}>
+              <a href="https://drive.google.com/file/d/17rcXqzp2n02WkcaUYUBT46S1OanEIDH-/view?usp=sharing" target="_blank" rel="noreferrer" id={contactStyles.resumeIcon}>
                 <FontAwesomeIcon icon={faSquarePen} size="xl"/>
               </a>
             </Col>
