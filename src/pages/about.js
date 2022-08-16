@@ -16,7 +16,7 @@ const About = () => {
             Software Engineer
           </p>
           <p className={aboutStyles.description}>
-            Full-stack engineer creating responsive design for both Mobile and Web Apps with extensive knowledge in building websites from ground up and working with API's. Specialize in Python and Django. Profession skills include coaching peers on coding best practices, written and verbal communication, and task prioritization. My Future career goals include leveraging my leadership skills, building web apps utilizing python as back-end, and learning from mentors.
+            I am a Full-stack Engineer creating modern and responsive Web applications.  My passion for learning allows me to stay in tune with the latest tools and technology.
           </p>
     </Container>
   )
