@@ -49,7 +49,7 @@ const Projects = () => {
   return(
     <Container className={containerClass} fluid>
       <h2 className={headerClass}><span id="project">Projects</span></h2>
-      <Row xs={1} md={2} className="pt-4">
+      <Row xs={1} md={2} lg={3} className="pt-4">
         <Project
           title={project1.title}
           description={project1.description}
