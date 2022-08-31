@@ -1,0 +1,24 @@
+@use "./index.sass"
+
+.description-container
+  padding: 40px 0 0 0
+  margin: 0 7px
+
+  .description-header
+    font-size: 35px
+
+  .description-content
+    position: relative
+    // border-left: solid 1px
+    font-size: 18px
+    margin: 15px 0
+    padding: 0 10px 0 20px
+
+  .description-content:before
+    content: ""
+    position: absolute
+    left: 0
+    bottom: 8px
+    top: 12px
+    height: 90%
+    border-left: 2px solid index.$secondary-color
