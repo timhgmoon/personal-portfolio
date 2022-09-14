@@ -1,6 +1,4 @@
 @use "./index.sass"
-$grey-color: #D9D9D9
-$black-color: #0D0D0D
 .description-container
   padding: 40px 0 0 0
   margin: 0 7px
@@ -29,10 +27,12 @@ $black-color: #0D0D0D
 
   .black-button
     border: none
-    background-color: $black-color
-    color: $grey-color
-    
+    background-color: index.$primary-color
+    color: index.$tertiary-color
+    padding: 0 5px
+
   .grey-button
     border: none
-    background-color: $grey-color
-    color: $black-color
+    background-color: index.$tertiary-color
+    color: index.$primary-color
+    padding: 0 5px

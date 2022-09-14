@@ -14,9 +14,9 @@ const IndexPage = () => {
       <Nav></Nav>
       <Description header={header} content={content}></Description>
       <Projects></Projects>
-      <footer>
-        <a href="/"><img src={Github} width="35px" height="35px"/></a>
-        <a href="/" ><img src={Linkedin} width="35px" height="35px"/></a>
+      <footer className="footer-container">
+        <a href="/" id="github-icon"><img src={Github} width="35px" height="35px"/></a>
+        <a href="/" id="linkedin-icon"><img src={Linkedin} width="35px" height="35px"/></a>
       </footer>
     </main>
   )
