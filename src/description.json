@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "header": "Hello.",
+    "stack": "",
+    "content": "My name is Tim, I am a full-stack developer creating modern and responsive web applications. I’m currently working on a project with General Assembly x U.S. Census Bureau to solve lead pipe issues around the U.S.  During my free time I like to listen to music, go to the gym or play games."
+  },
+  {
+    "id": 1,
+    "header": "Daily Driver.",
+    "stack": "React, MongoDB, Mongoose, Express.js",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+  },
+  {
+    "id": 2,
+    "header": "Opportunity Project.",
+    "stack": "React, Python, Django, Postgres, Leaflet",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+  },
+  {
+    "id": 3,
+    "header": "Social Media.",
+    "stack": "React, Python, Django, Pillow",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+  }
+]

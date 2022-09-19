@@ -9,14 +9,15 @@ $font-stack: 'Roboto Slab', sans-serif
 *
   font-family: $font-stack
   font-weight: normal
-  font-size: 25px
   padding: 0
   margin: 0
+  box-sizing: border-box
 
 main
-  height: 100vh
+  min-height: 100vh
   color: $primary-color
   background-color: $background-color
+  font-size: 10px
 
 .footer-container
   position: fixed
@@ -24,6 +25,6 @@ main
   bottom: 0
 
 #github-icon
-  margin-right: 7px
+  margin-right: .7em
 
 @include screen.medium-up
