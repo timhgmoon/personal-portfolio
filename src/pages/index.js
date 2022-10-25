@@ -16,14 +16,16 @@ const IndexPage = () => {
   return (
     <main>
       <Nav></Nav>
-      <Description header={descriptionData[activeID].header} content={descriptionData[activeID].content}></Description>
-      <Projects activeID={activeID} handleID={handleID} descriptionData={descriptionData}></Projects>
+      <div className="container">
+        <Description header={descriptionData[activeID].header} content={descriptionData[activeID].content}></Description>
+        <Projects activeID={activeID} handleID={handleID} descriptionData={descriptionData}></Projects>
+      </div>
       <footer className="footer-container">
         <a href="/" id="github-icon">
-          <img src={Github} width="35px" height="35px" alt="github link"/>
+          <img className="footer-icon" src={Github} alt="github link"/>
         </a>
         <a href="/" id="linkedin-icon">
-          <img src={Linkedin} width="35px" height="35px" alt="linkedin link"/>
+          <img className="footer-icon" src={Linkedin}  alt="linkedin link"/>
         </a>
       </footer>
     </main>

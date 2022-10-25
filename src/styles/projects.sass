@@ -1,4 +1,9 @@
 @use '../styles/index.sass'
+@use "./_screen.sass"
+
+.project-container
+  @include screen.medium-up
+    width: 40%
 
 .project-header
   font-size: 3.5em

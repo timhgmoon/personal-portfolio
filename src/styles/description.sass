@@ -1,7 +1,12 @@
 @use "./index.sass"
+@use "./_screen.sass"
+
 .description-container
   padding: 4em 0 0 0
   margin: 0 .7em
+
+  @include screen.medium-up 
+    width: 60%
 
   .description-header
     font-size: 3.5em

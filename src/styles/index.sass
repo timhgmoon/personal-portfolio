@@ -18,13 +18,23 @@ main
   color: $primary-color
   background-color: $background-color
   font-size: 10px
-
+  
+.container 
+  @include screen.medium-up 
+    display: flex
+    flex-direction: row
+    
 .footer-container
   position: fixed
   right: 0
   bottom: 0
 
+.footer-icon
+  width: 4.5em
+  height: 4.5em
+
 #github-icon
   margin-right: .7em
 
 @include screen.medium-up
+np
