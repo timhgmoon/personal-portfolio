@@ -10,6 +10,10 @@
   text-align: right
   margin: 1em .8em 0 0
 
+  @include screen.medium-up 
+    text-align: left
+    font-size: 7em
+
 .project-content
   font-size: 2em
   display: flex
@@ -20,6 +24,10 @@
   padding: 0 1em 0 2em
   color: index.$secondary-color
   list-style-type: none
+
+  @include screen.medium-up 
+    text-align: left
+    font-size: 3em
 
 .project-item:hover
   color: index.$primary-color

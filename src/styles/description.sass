@@ -11,6 +11,8 @@
   .description-header
     font-size: 3.5em
     margin: 0 0 0 .2em
+    @include screen.medium-up 
+      font-size: 7em
 
   .description-content
     position: relative
@@ -18,6 +20,9 @@
     line-height: 1.5em
     margin: 1.5em 0
     padding: 0 1em 0 1em
+
+    @include screen.medium-up 
+      font-size: 3em
 
   .description-content:before
     content: ""
@@ -27,6 +32,9 @@
     top: .8em
     height: 90%
     border-left: .2em solid index.$secondary-color
+    @include screen.medium-up
+      display: none
+    
 
   .button-container
     margin: 0 1.8em

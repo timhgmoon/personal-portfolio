@@ -1,4 +1,5 @@
 @use './index.sass'
+@use '_screen.sass'
 
 #resume-button
   background-color: index.$primary-color
@@ -12,6 +13,16 @@
   border-radius: .1em
   padding: .2em 0
   border: .1em solid #e1e4e8
+
+  @include screen.medium-up
+    background-color: index.$tertiary-color
+    color: index.$primary-color
+    height: 2.5em
+    width: 8em
+    text-align: left
+    margin: .5em 1.5em 0 0
+    padding: .4em .8em
+    border: .05em solid index.$primary-color
 
 #logo
   margin: .1em 0 0 .2em
