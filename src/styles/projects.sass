@@ -3,16 +3,18 @@
 
 .project-container
   @include screen.medium-up
-    width: 40%
+    width: 45%
+    margin: 6em 0 0 0
 
 .project-header
   font-size: 3.5em
   text-align: right
   margin: 1em .8em 0 0
 
-  @include screen.medium-up 
+  @include screen.medium-up
+    // margin: 1em .8em 0 .8em
     text-align: left
-    font-size: 7em
+    font-size: 6em
 
 .project-content
   font-size: 2em
@@ -25,9 +27,10 @@
   color: index.$secondary-color
   list-style-type: none
 
-  @include screen.medium-up 
+  @include screen.medium-up
     text-align: left
-    font-size: 3em
+    font-size: 2.5em
+    margin-left: -1em
 
 .project-item:hover
   color: index.$primary-color

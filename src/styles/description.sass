@@ -6,13 +6,14 @@
   margin: 0 .7em
 
   @include screen.medium-up
-    width: 60%
+    width: 55%
+    margin: 17em 2em 0 4em
 
   .description-header
     font-size: 3.5em
     margin: 0 0 0 .2em
     @include screen.medium-up
-      font-size: 7em
+      font-size: 6em
 
   .description-stack
     margin: 0 0 0 .8em
@@ -28,18 +29,19 @@
     position: relative
     font-size: 2em
     line-height: 1.5em
-    margin: 1.5em 0
+    margin: 1em 0
     padding: 0 1em 0 1em
 
     @include screen.medium-up
-      font-size: 3em
+      font-size: 2.5em
+      margin: .75em 0 0 -.25em
 
   .description-content:before
     content: ""
     position: absolute
     left: .2em
     bottom: .8em
-    top: .8em
+    top: .6em
     height: 90%
     border-left: .2em solid index.$secondary-color
     @include screen.medium-up
@@ -49,6 +51,7 @@
     margin: 0 6.5em
     @include screen.medium-up
       text-align: right
+      margin-top: 1.5em
 
   .black-button
     border: none
