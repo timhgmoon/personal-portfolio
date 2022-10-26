@@ -37,7 +37,9 @@
     
 
   .button-container
-    margin: 0 1.8em
+    margin: 0 6.5em
+    @include screen.medium-up 
+      text-align: right
 
   .black-button
     border: none
@@ -45,6 +47,9 @@
     color: index.$tertiary-color
     height: 2.8em
     width: 5.5em
+    @include screen.medium-up 
+      height: 3.2em
+      width: 8em
 
   .grey-button
     border: none
@@ -52,3 +57,7 @@
     color: index.$primary-color
     height: 2.8em
     width: 5.5em
+
+    @include screen.medium-up 
+      height: 3.2em
+      width: 8em
