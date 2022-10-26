@@ -4,7 +4,11 @@ const Nav = () => {
   return (
     <nav>
       <div id="logo">TMoon</div>
-      <div id="resume-button">Resume</div>
+      <div className="socials-container">
+        <div className="socials">LinkedIn</div>
+        <div className="socials">Github</div>
+        <div id="resume-button">Resume</div>
+      </div>
     </nav>
   )
 }
