@@ -5,14 +5,24 @@
   padding: 4em 0 0 0
   margin: 0 .7em
 
-  @include screen.medium-up 
+  @include screen.medium-up
     width: 60%
 
   .description-header
     font-size: 3.5em
     margin: 0 0 0 .2em
-    @include screen.medium-up 
+    @include screen.medium-up
       font-size: 7em
+
+  .description-stack
+    margin: 0 0 0 .8em
+    font-size: 1.2em
+    font-weight: 200
+    @include screen.medium-up
+      margin: 0 0 0 1em
+      display: block
+      font-style: italic
+      font-size: 2em
 
   .description-content
     position: relative
@@ -21,7 +31,7 @@
     margin: 1.5em 0
     padding: 0 1em 0 1em
 
-    @include screen.medium-up 
+    @include screen.medium-up
       font-size: 3em
 
   .description-content:before
@@ -34,11 +44,10 @@
     border-left: .2em solid index.$secondary-color
     @include screen.medium-up
       display: none
-    
 
   .button-container
     margin: 0 6.5em
-    @include screen.medium-up 
+    @include screen.medium-up
       text-align: right
 
   .black-button
@@ -47,7 +56,7 @@
     color: index.$tertiary-color
     height: 2.8em
     width: 5.5em
-    @include screen.medium-up 
+    @include screen.medium-up
       height: 3.2em
       width: 8em
 
@@ -58,6 +67,6 @@
     height: 2.8em
     width: 5.5em
 
-    @include screen.medium-up 
+    @include screen.medium-up
       height: 3.2em
       width: 8em
