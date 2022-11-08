@@ -1,6 +1,7 @@
 @use "./index.sass"
 @use "./_screen.sass"
 
+
 .description-container
   padding: 4em 0 0 0
   margin: 0 .7em
@@ -39,8 +40,11 @@
     padding: 0 1em 0 1em
 
     @include screen.medium-up
-      font-size: 2em
+      font-size: 1.75em
       margin: .75em 0 0 -.5em
+
+    @include screen.large
+      font-size: 2em
 
   .description-content:before
     content: ""
@@ -56,6 +60,10 @@
   .button-container
     margin: 1em 3.5em 4em 6.5em
     text-align: right
+
+    a 
+      text-decoration: none
+
     @include screen.medium-up
       text-align: right
       margin: 2em 3em 0 6.5em
@@ -66,9 +74,11 @@
     color: index.$tertiary-color
     height: 2.8em
     width: 5.5em
+
     @include screen.medium-up
       height: 3.2em
       width: 8em
+
 
   .grey-button
     border: none

@@ -18,9 +18,12 @@ const IndexPage = () => {
       <Nav></Nav>
       <div className="container">
         <Description 
+          activeID = {activeID}
           header={descriptionData[activeID].header} 
           stack={descriptionData[activeID].stack} 
-          content={descriptionData[activeID].content}>
+          content={descriptionData[activeID].content}
+          github={descriptionData[activeID].github}
+          live={descriptionData[activeID].live}>
         </Description>
         <Projects 
           activeID={activeID} 
