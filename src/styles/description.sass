@@ -7,12 +7,15 @@
 
   @include screen.medium-up
     width: 55%
-    margin: 17em 2em 0 4em
+    margin: 9em 2em 0 4em
+    padding-bottom: 3em
 
   .description-header
     font-size: 3.5em
     margin: 0 0 0 .2em
     @include screen.medium-up
+      font-size: 4em
+    @include screen.large
       font-size: 6em
 
   .description-stack
@@ -20,9 +23,12 @@
     font-size: 1.2em
     font-weight: 200
     @include screen.medium-up
-      margin: 0 0 0 1em
+      margin-left: .75em
       display: block
       font-style: italic
+      font-size: 1.5em
+
+    @include screen.large
       font-size: 2em
 
   .description-content
@@ -33,8 +39,8 @@
     padding: 0 1em 0 1em
 
     @include screen.medium-up
-      font-size: 2.5em
-      margin: .75em 0 0 -.25em
+      font-size: 2em
+      margin: .75em 0 0 -.5em
 
   .description-content:before
     content: ""
@@ -48,10 +54,11 @@
       display: none
 
   .button-container
-    margin: 0 6.5em
+    margin: 1em 3.5em 4em 6.5em
+    text-align: right
     @include screen.medium-up
       text-align: right
-      margin-top: 1.5em
+      margin: 2em 3em 0 6.5em
 
   .black-button
     border: none

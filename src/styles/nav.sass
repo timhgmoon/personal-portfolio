@@ -5,7 +5,7 @@
   margin: .1em 0 0 .2em
   font-size: 2.5em
 
-  @include screen.medium-up 
+  @include screen.medium-up
     margin: 1em 0 0 .5em
     font-size: 3em
 
@@ -23,7 +23,7 @@ nav
   font-size: 2em
   margin-top: 2em
 
-  @include screen.medium-up 
+  @include screen.medium-up
     display: block
 
 #resume-button
@@ -40,14 +40,27 @@ nav
   border: .1em solid #e1e4e8
 
   @include screen.medium-up
+    position: relative
     background-color: index.$tertiary-color
     color: index.$primary-color
-    height: 2.5em
-    width: 8.5em
+    height: 2em
+    width: 8em
     text-align: left
     margin: 1.5em 1.5em 0 0
     border-radius: .1em
-    padding: .4em .8em
+    padding: .4em .8em .3em .8em
     border: .05em solid index.$primary-color
 
-
+#resume-box
+  display: none
+  @include screen.medium-up
+    display: block
+    background-color: index.$primary-color
+    color: #e1e4e8
+    text-align: center
+    line-height: 1.95em
+    height: 1.95em
+    width: 2.5em
+    right: 0
+    bottom: .01em
+    position: absolute

@@ -9,18 +9,18 @@
     "id": 1,
     "header": "Daily Driver.",
     "stack": "React, MongoDB, Mongoose, Express.js",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+    "content": "A task manager geared towards SDE's to drive efficiency, collaboration and productivity.  Utilizes MongoDB and Express.js to create CRUD routes and React as our front-end framework."
   },
   {
     "id": 2,
     "header": "Opportunity Project.",
     "stack": "React, Python, Django, Postgres, Leaflet",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+    "content": "An application to help the village of Hazelcrest, IL access free data in order to apply for federal grants. Utilizes PostgreSQL and Django for the back-end server, hosted on Azure.  Front-end framework includes React as well as the Leaflet library in order to create an interactive map for users.  Teams included a UI/UX, Data Engineers and Software Engineers."
   },
   {
     "id": 3,
     "header": "Social Media.",
     "stack": "React, Python, Django, Pillow",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus mi non diam laoreet facilisis. Maecenas et luctus est, eu laoreet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras iaculis magna in ipsum imperdiet sodales. Aliquam aliquam eu nunc ut posuere. "
+    "content": "An application that immitates social media platforms like instagram. Users can create a profile as well as add friends and upload/edit/delete posts.  Utilizes PostgreSQL and Django for the back-end server and pillow to upload images.  Front-end includes React."
   }
 ]
