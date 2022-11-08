@@ -1,0 +1,92 @@
+@use "./index.sass"
+@use "./_screen.sass"
+
+
+.description-container
+  padding: 4em 0 0 0
+  margin: 0 .7em
+
+  @include screen.medium-up
+    width: 55%
+    margin: 9em 2em 0 4em
+    padding-bottom: 3em
+
+  .description-header
+    font-size: 3.5em
+    margin: 0 0 0 .2em
+    @include screen.medium-up
+      font-size: 4em
+    @include screen.large
+      font-size: 6em
+
+  .description-stack
+    margin: 0 0 0 .8em
+    font-size: 1.2em
+    font-weight: 200
+    @include screen.medium-up
+      margin-left: .75em
+      display: block
+      font-style: italic
+      font-size: 1.5em
+
+    @include screen.large
+      font-size: 2em
+
+  .description-content
+    position: relative
+    font-size: 2em
+    line-height: 1.5em
+    margin: 1em 0
+    padding: 0 1em 0 1em
+
+    @include screen.medium-up
+      font-size: 1.75em
+      margin: .75em 0 0 -.5em
+
+    @include screen.large
+      font-size: 2em
+
+  .description-content:before
+    content: ""
+    position: absolute
+    left: .2em
+    bottom: .8em
+    top: .6em
+    height: 90%
+    border-left: .2em solid index.$secondary-color
+    @include screen.medium-up
+      display: none
+
+  .button-container
+    margin: 1em 3.5em 4em 6.5em
+    text-align: right
+
+    a 
+      text-decoration: none
+
+    @include screen.medium-up
+      text-align: right
+      margin: 2em 3em 0 6.5em
+
+  .black-button
+    border: none
+    background-color: index.$primary-color
+    color: index.$tertiary-color
+    height: 2.8em
+    width: 5.5em
+
+    @include screen.medium-up
+      height: 3.2em
+      width: 8em
+
+
+  .grey-button
+    border: none
+    background-color: index.$tertiary-color
+    color: index.$primary-color
+    height: 2.8em
+    width: 5.5em
+
+    @include screen.medium-up
+      height: 3.2em
+      width: 8em

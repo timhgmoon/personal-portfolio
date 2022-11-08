@@ -1,0 +1,46 @@
+@use '../styles/index.sass'
+@use "./_screen.sass"
+
+.project-container
+  @include screen.medium-up
+    width: 45%
+    margin-top: 6em
+  @include screen.large 
+    margin-top: 5em
+
+.project-header
+  font-size: 3.5em
+  text-align: right
+  margin: .5em .8em 0 0
+
+  @include screen.medium-up
+    margin-left: .75em
+    text-align: left
+    font-size: 4em
+
+  @include screen.large
+    font-size: 6em
+
+.project-content
+  font-size: 2em
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 1em
+  margin: 1.5em 0
+  padding: 0 1em 0 2em
+  color: index.$secondary-color
+  list-style-type: none
+
+  @include screen.medium-up
+    font-size: 2em
+
+  @include screen.large
+    font-size: 2.5em
+
+.project-item:hover
+  color: index.$primary-color
+
+.active
+  background: index.$tertiary-color
+  color: index.$primary-color
