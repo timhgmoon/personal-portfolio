@@ -5,6 +5,9 @@
   margin: .1em 0 0 .2em
   font-size: 2.5em
 
+  a
+    text-decoration: none
+    color: index.$primary-color
   @include screen.medium-up
     margin: 1em 0 0 .5em
     font-size: 3em
@@ -18,6 +21,13 @@ nav
   flex-direction: row
   gap: 5.5em
 
+  a
+    text-decoration: none
+  @include screen.medium-up
+    a
+      color: index.$primary-color
+  
+
 .socials
   display: none
   font-size: 2em
@@ -25,6 +35,7 @@ nav
 
   @include screen.medium-up
     display: block
+  
 
 #resume-button
   background-color: index.$primary-color
