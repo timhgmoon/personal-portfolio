@@ -32,10 +32,10 @@ const IndexPage = () => {
         </Projects>
       </div>
       <footer className="footer-container">
-        <a href="/" id="github-icon">
+        <a target="_blank" href="https://github.com/timhgmoon" id="github-icon">
           <img className="footer-icon" src={Github} alt="github link"/>
         </a>
-        <a href="/" id="linkedin-icon">
+        <a target="_blank" href="https://www.linkedin.com/in/timhgmoon/" id="linkedin-icon">
           <img className="footer-icon" src={Linkedin}  alt="linkedin link"/>
         </a>
       </footer>
